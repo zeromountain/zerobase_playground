@@ -1,6 +1,4 @@
-const countUpperCase = function (str) {
-  return str.match(/[A-Z]/g).length;
-};
+const countUpperCase = require('./04_countUpperCase');
 
 test(`'KoreaTimeGood'의 문자에 대문자가 몇 개?!`, () => {
   expect(countUpperCase('KoreaTimeGood')).toBe(3);

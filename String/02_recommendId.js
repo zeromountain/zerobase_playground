@@ -11,6 +11,15 @@
  * @param new_id {string}
  * @param return {string}
  */
+/**
+ * 1단계 → 소문자로 치환
+ * 2단계 → !, @, #, * 문자 제거
+ * 3단계 → '...', '..'를 '.'로 변경
+ * 4단계 → 첫단어에 '.' 제거
+ * 5단계 → 빈 문자열이면 a로
+ * 6단계 → ID의 길이 15자
+ * 7단계 → ID의 길이 2이하이면 마지막 문자 추가
+ */
 
 function recommendId(newId) {
   const recommended = newId

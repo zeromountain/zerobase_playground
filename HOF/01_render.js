@@ -17,3 +17,5 @@ const todos = [
 ];
 
 console.log(render(todos));
+
+module.exports = render;

@@ -1,10 +1,10 @@
+const sortBy = require('./03_sortBy');
+
 let todos = [
   { id: 3, content: 'HTML', completed: false },
   { id: 2, content: 'CSS', completed: true },
   { id: 1, content: 'Javascript', completed: false },
 ];
-
-const sortBy = (todos, key) => todos.sort((a, b) => (a[key] > b[key] ? 1 : -1));
 
 test('todos 배열을 id 프로퍼티를 기준으로 정렬합니다.', () => {
   expect(sortBy(todos, 'id')).toStrictEqual([

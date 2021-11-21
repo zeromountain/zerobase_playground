@@ -1,14 +1,4 @@
-const render = todos =>
-  todos.reduce(
-    (acc, todo) =>
-      (acc += `
-        <li id="${todo.id}">
-          <label><input type="checkbox"${todo.completed ? ' checked' : ''}>${
-        todo.content
-      }</label>
-        </li>`),
-    '',
-  );
+const render = require('./01_render');
 
 const todos = [
   { id: 3, content: 'HTML', completed: false },

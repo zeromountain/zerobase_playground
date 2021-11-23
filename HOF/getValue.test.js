@@ -1,4 +1,6 @@
-const getValues = require('./02_getValues');
+// const getValues = require('./02_getValues');
+
+const getValues = (todos, key) => todos.map(todo => todo[key]);
 
 const todos = [
   { id: 3, content: 'HTML', completed: false },

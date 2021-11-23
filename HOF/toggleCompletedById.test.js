@@ -1,4 +1,12 @@
-const toggleCompletedById = require('./06_toggleCompletedById');
+// const toggleCompletedById = require('./06_toggleCompletedById');
+/*
+  → todos 배열을 바꾼다
+
+const toggleCompletedById = (todos, id) =>
+  todos.map(todo => {
+    return todo.id === id ? { ...todo, completed: !todo.completed } : todo;
+  });
+*/
 
 let todos = [
   { id: 3, content: 'HTML', completed: false },

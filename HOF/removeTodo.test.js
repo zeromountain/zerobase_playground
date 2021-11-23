@@ -1,4 +1,5 @@
-const removeTodo = require('./05_removeTodo');
+// const removeTodo = require('./05_removeTodo');
+const removeTodo = (todos, id) => todos.filter(todo => todo.id !== id);
 
 let todos = [
   { id: 3, content: 'HTML', completed: false },
